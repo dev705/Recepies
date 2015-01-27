@@ -1,0 +1,25 @@
+recepies:
+    path: /
+    defaults: {_controller: RecepiesBundle:Recepies:index }
+
+recepie_create:
+    path: /create
+    defaults: {_controller: RecepiesBundle:RecepiesDb:create }
+
+recepie_show:
+    path: /show/{id}
+    defaults: {_controller: RecepiesBundle:RecepiesDb:show }
+
+recepie_create_form:
+    path: /forms/create
+    defaults: {_controller: RecepiesBundle:RecepiesForm:create}
+
+recepie_create_success:
+    path: /forms/success
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'RecepiesBundle:Static:success.html.twig'
+
+recepie_edit:
+    path: /edit/{id}
+    defaults: {_controller: RecepiesBundle:RecepiesForm:edit }

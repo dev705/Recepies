@@ -1,0 +1,6 @@
+RecepiesBundle\Entity\Recepie:
+  properties:
+    title:
+      - NotBlank: ~
+      - Length:
+          min: 10

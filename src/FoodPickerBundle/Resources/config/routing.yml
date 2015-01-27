@@ -1,0 +1,19 @@
+foodpicker:
+    path: /
+    defaults: {_controller: FoodPickerBundle:FoodPicker:index }
+
+#hello:
+#    path: /hello/{name}
+#    defaults: {_controller: FoodPickerBundle:Hello:index }
+#
+hello_slash:
+    path: /hello/
+    defaults: {_controller: FoodPickerBundle:Hello:index }
+
+foodpicker_privacy:
+    path: /privacy
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'FoodPickerBundle:Static:privacy.html.twig'
+        maxAge: 86400
+        sharedAge: 86400

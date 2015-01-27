@@ -1,0 +1,23 @@
+{% extends "::base.html.twig" %}
+
+
+
+{% block title %}Edit Recepie{% endblock %}
+
+    {% block content_header '' %}
+
+        {% block body %}
+            <div class="container-narrow">
+                <div class="masthead">
+                    <h3 class="muted">Change recepie info below</h3>
+                </div>
+                <div class="jumbotron">
+
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+
+                </div>
+
+            </div>
+        {% endblock %}

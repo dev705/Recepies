@@ -1,0 +1,20 @@
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
+
+acme_website:
+    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+    prefix: /
+
+foodpick_website:
+    resource: "@FoodPickerBundle/Resources/config/routing.yml"
+    prefix: /foodpicker/
+
+foodpick_hello:
+    resource: "@FoodPickerBundle/Controller/HelloController.php"
+    prefix: /foodpicker/
+    type:     annotation
+
+recepies_site:
+    resource: "@RecepiesBundle/Resources/config/routing.yml"
+    prefix: /recepies/
